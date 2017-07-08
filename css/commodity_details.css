@@ -127,6 +127,9 @@
     padding-top: 15px;
     border-top: 1px solid #f0e9e5;
 }
+.comment_details_2{
+    margin-bottom: 10%;
+}
 .comment_details .comment_name{
     width: 40%;
     float: left;
@@ -173,12 +176,15 @@
     margin-top: 30px;
     bottom: 0px;
     position: relative;
+    position:fixed;
 }
 .bottom_box .bottom_left{
     width: 25%;
     float: left;
     text-align: center;
+    background-color: white;
 }
+
 .bottom_box .bottom_left .bottom_QQ{
     width: 50%;
     float: left;
@@ -216,3 +222,13 @@
 .bottom_box .bottom_right .right_save_2{
     background-color: rgb(244,100,37);
 }
+
+
+
+/*.box{*/
+    /*position: fixed;*/
+    /*left:0;*/
+    /*top:0;*/
+    /*!*height: 80%;*!*/
+    /*background-color: white;*/
+/*}*/

@@ -3,28 +3,32 @@ body{
     padding: 0px;
 }
 .box{
-    width: 100%;
+    width: 70%;
+    margin-bottom: 100px;
+    position: fixed;
+    top:15%;
+    background-color: white;
 }
 .box .content_box{
     width: 96%;
     margin: 10px auto;
 }
 .box .content_box .img_left{
-    width: 33%;
+    width: 23%;
     float: left;
 }
 .box .content_box .title_right{
-    width: 64%;
+    width: 54%;
     float: left;
-    padding-top: 20px;
-    padding-left: 20px;
-    font-size: 1.4em;
+    /*padding-top: 20px;*/
+    /*padding-left: 20px;*/
+    /*iconfont-size: 1.4em;*/
     color: rgb(103,103,103);
 }
-.box .content_box .img_left img{
-    width: 100%;
-    height: 100%;
-}
+/*.box .content_box .img_left img{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
 .box .content_box .title_right span{
     color: red;
 }
@@ -36,15 +40,15 @@ body{
 }
 .box .content_box .content_middle p{
     margin: 0px;
-    line-height: 3em;
+    line-height: 2.0em;
     border-bottom: 1px solid rgb(246,246,246);
     font-family: "微软雅黑";
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 .box .content_box .content_middle .type_button{
     border: none;
-    margin-top: 1.4em;
-    margin-bottom: 1.4em;
+    margin-top:0.7em;
+    margin-bottom: 0.3em;
     line-height: 1.8em;
     color: rgb(103,103,103);
     font-family: "微软雅黑";
@@ -72,6 +76,6 @@ body{
     font-family: "微软雅黑";
     text-align: center;
     background-color: rgb(170,170,170);
-    line-height: 3em;
-    font-size: 1.6em;
+    line-height: 2em;
+    font-size: 1.3em;
 }

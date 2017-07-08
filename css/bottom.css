@@ -13,12 +13,12 @@ body{
 }
 .bottom_box .bottom_list .shouye{
     width: 23%;
-    /*font-size: 24px;*/
+    /*iconfont-size: 24px;*/
     text-align: center;
     float: left;
 }
  /*.mui-tab-label {*/
-    /*font-size: 11px;*/
+    /*iconfont-size: 11px;*/
     /*display: block;*/
     /*overflow: hidden;*/
     /*text-overflow: ellipsis;*/

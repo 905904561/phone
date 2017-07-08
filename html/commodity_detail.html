@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>Title</title>
-    <!--标准mui.css-->
     <link rel="stylesheet" href="../css/brand.css">
     <link rel="stylesheet" href="../css/commodity_details.css">
+    <link rel="stylesheet" href="../css/combo_type.css">
+
 </head>
 <body>
 <header>
@@ -116,30 +117,30 @@
             套餐类型： 6天无限4G流量 ：4G无限高速流量
         </div>
     </div>
-<div class="comment_details">
-    <div class="comment_name">昵********称</div>
-    <div class="comment_name">评价时间： 2017-06-03</div>
-    <p class="comment_content">
-        好用，一年前去美国在别家也买过没有这个快好用，一年前去美国在别
-        家也买过没有这个快好用，一年前去美国在别家也买过没有这个快
-    </p>
-    <div class="comment_img">
-        <ul>
-            <li><img src="../images/pinglun.png"></li>
-            <li><img src="../images/pinglun.png"></li>
-            <li><img src="../images/pinglun.png"></li>
-        </ul>
-    </div>
-    <div class="reply">
-        <p class="comment_reply">
-            回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
-            回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
+    <div class="comment_details comment_details_2">
+        <div class="comment_name">昵********称</div>
+        <div class="comment_name">评价时间： 2017-06-03</div>
+        <p class="comment_content">
+            好用，一年前去美国在别家也买过没有这个快好用，一年前去美国在别
+            家也买过没有这个快好用，一年前去美国在别家也买过没有这个快
         </p>
+        <div class="comment_img">
+            <ul>
+                <li><img src="../images/pinglun.png"></li>
+                <li><img src="../images/pinglun.png"></li>
+                <li><img src="../images/pinglun.png"></li>
+            </ul>
+        </div>
+        <div class="reply">
+            <p class="comment_reply">
+                回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
+                回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
+            </p>
+        </div>
+        <div class="type">
+            套餐类型： 6天无限4G流量 ：4G无限高速流量
+        </div>
     </div>
-    <div class="type">
-        套餐类型： 6天无限4G流量 ：4G无限高速流量
-    </div>
-</div>
 <!--底部联系客服，加入收藏-->
 <div class="bottom_box">
     <div class="bottom_left">
@@ -161,6 +162,64 @@
         </div>
     </div>
 </div>
+
+
+<div class="box" style="display: none">
+    <div class="content_box">
+        <div class="content_top">
+            <div class="img_left">
+                <img src="../images/pro_s.png">
+            </div>
+            <div class="title_right">
+                <p>价格：<span>￥29.9~36.9</span></p>
+                <p>已选: </p>
+            </div>
+        </div>
+        <div class="content_middle">
+            <p>取件方式:</p>
+            <button class="type_button">自取</button>
+            <button class="type_button">邮寄</button>
+        </div>
+        <div class="content_middle">
+            <p>套餐类型:</p>
+            <div class="type">
+                8天 2.5GB 4G流量+无限2G流量（含通话）赠送邮寄到家
+            </div>
+            <div class="type">
+                8天 2.5GB 4G流量+无限2G流量（含通话）赠送邮寄到家
+            </div>
+            <div class="type">
+                8天 2.5GB 4G流量+无限2G流量（含通话）赠送邮寄到家
+            </div>
+        </div>
+    </div>
+    <div class="btn_close">
+        <button class="close">关闭</button>
+    </div>
+</div>
+
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/layer.js"></script>
 <script src="../iconfont/iconfont.js"></script>
+<script>
+//    $('.choose_type').on('click', function() {
+//        var pageii = layer.open({
+//            type: 1,
+//            btn: '关闭全部',
+//            content: '<iframe src="combo_type.html"></iframe>',
+//            area: ['100%', '100%'],
+//            style: 'position:fixed; left:0; top:10%;  border:none;'
+//        });
+//    })
+
+        $(".choose_type").click(function(){
+            $(".box").show();
+        });
+
+        $(".close").click(function(){
+            $(".box").hide();
+        });
+
+</script>
 </body>
 </html>
