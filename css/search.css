@@ -1,0 +1,54 @@
+.box_input{
+    width: 96%;
+    margin: 0 auto;
+}
+.box_input img{
+    margin-left: 10px;
+}
+.box_input input{
+    background: url("../images/dis.png")no-repeat 2% center;
+    padding-left: 38px;
+    line-height: 28px;
+    width: 83%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid darkgrey;
+    color: darkgrey;
+    font-size: 1em;
+    outline: none;
+}
+.box_input .cancel{
+    color: gray;
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+.title_hot{
+    font-size: 1.2em;
+    color: gray;
+ }
+.hot_search .search_content{
+    border: 1px solid darkgrey;
+    padding: 0.8em;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: darkgrey;
+}
+.history_hot{
+    width: 100%;
+    float: left;
+    color: gray;
+    font-size: 1.2em;
+}
+.history_search {
+    float: left;
+    color: gray;
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 2em;
+    width: 100%;
+}
+.hot_search{
+    width: 96%;
+    margin: 0 auto;
+}

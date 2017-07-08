@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    background-color: #122b40;
+    float: left;
+}
+.heade_left .icon {
+    width: 1.3em;
+    height: 1.1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-weight: bold;
+}
+.head_box{
+    width: 97%;
+    margin: 0 auto;
+}
+.heade_left{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 1.2em;
+    line-height: 2.4em;
+}
+.heade_left2 {
+   text-align: right;
+    font-weight: 600;
+}
+.heade_left3{
+    text-align: left;
+}
+.heade_left a{
+    color: white;
+    text-decoration: none;
+}
+.img_box img{
+    width: 100%;
+}
+.brand_box{
+    width: 98%;
+    margin: 0 auto;
+}
+.brand_box_left{
+    width: 49.5%;
+    float: left;
+    margin-right: 5px;
+}
+.brand_box_right{
+    width: 49.5%;
+    float: right;
+}
+.brand_box img{
+    width: 100%;
+    background-size: 100% 100%;
+}

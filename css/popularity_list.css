@@ -1,0 +1,8 @@
+.recommend_title_line{
+    width: 100%;
+    border-bottom: 1px solid #C8C8C8;
+    margin-top: 10px;
+}
+.details {
+    border: 1px solid #C8C8C8;
+}
