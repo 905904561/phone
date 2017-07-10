@@ -11,6 +11,8 @@
     <!--标准mui.css-->
     <link rel="stylesheet" href="../css/mui.min.css">
     <link rel="stylesheet" href="../css/brand.css">
+    <link rel="stylesheet" href="../css/fenLei.css">
+    <script src="../iconfont/iconfont.js"></script>
     <style>
         h5 {
             margin: 5px 7px;
@@ -19,6 +21,21 @@
 </head>
 
 <body>
+<!--<header >-->
+    <!--<div class="head_box">-->
+        <!--<div class="heade_left heade_left3">-->
+            <!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left">返回 关闭</a>-->
+        <!--</div>-->
+        <!--<div class="heade_left">-->
+            <!--搜索-->
+        <!--</div>-->
+        <!--<div class="heade_left heade_left2">-->
+            <!--<svg class="icon" aria-hidden="true">-->
+                <!--<use xlink:href="#icon-gengduo"></use>-->
+            <!--</svg>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</header>-->
 <header>
     <div class="head_box">
         <div class="heade_left heade_left3">
@@ -28,7 +45,7 @@
             <a href="javascript:history.go(-1)">返回 关闭</a>
         </div>
         <div class="heade_left">
-            搜索
+            分类
         </div>
         <div class="heade_left heade_left2">
             <svg class="icon" aria-hidden="true">
@@ -38,16 +55,99 @@
     </div>
 </header>
 <div class="mui-content">
-    <div class="mui-content-padded" style="margin: 5px;">
-        <div class=" mui-input-row mui-icon mui-icon-search">
+    <div class="mui-content-padded " >
+        <div class="mui-input-row mui-search ">
             <input type="search" class="mui-input-clear" placeholder="找货源，来这就对了">
+        </div>
+    </div>
+    <!--左边选项-->
+    <div class="content_left">
+        <ul class="left_choose">
+            <li class="allType active btns" onclick="choose(0)">全部分类</li>
+            <li class="btns" onclick="choose(1)">全球旅游</li>
+            <li class="btns" onclick="choose(2)">无限wifi</li>
+            <li class="btns" onclick="choose(3)">电话卡</li>
+            <li class="btns" onclick="choose(4)">电话卡</li>
+            <li class="btns" onclick="choose(5)">电话卡</li>
+            <li class="btns" onclick="choose(6)">电话卡</li>
+            <li class="btns" onclick="choose(7)">电话卡</li>
+        </ul>
+    </div>
+    <!--右边内容-->
+    <div class="content_right">
+        <div class="content_box">
+            <div class="img_box">
+                <img src="../images/ad2.png">
+            </div>
+            <div class="title_choose">
+                —— 全球旅游 ——
+            </div>
+            <div class="fenLei_details">
+                <ul class="mui-table-view mui-grid-view mui-grid-9">
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                </ul>
+            </div>
+
+            <div class="title_choose">
+                —— 全球旅游 ——
+            </div>
+            <div class="fenLei_details">
+                <ul class="mui-table-view mui-grid-view mui-grid-9">
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </div>
 <script src="../js/mui.min.js"></script>
 <script>
-
-
+    function choose(v){
+        var a=document.getElementsByClassName("btns");
+        console.log(a);
+        for(var i=0;i< a.length;i++){
+            if(v !=i){
+                a[i].style.color="black";
+                a[i].style.background=" white";
+            }
+        }
+        a[v].style.color="rgb(244,100,37)";
+        a[v].style.background="url(../images/left_tou.png) no-repeat  9%";
+    }
 </script>
 </body>
 
