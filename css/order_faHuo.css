@@ -1,0 +1,52 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(85,85,85);
+}
+.top{
+    margin-top: 52px;
+    display: flex;
+}
+.order_box{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+.order_box img{
+   height: 100%;
+    width: 80%;
+}
+.order_box p{
+    font-size: 0.8rem;
+}
+.order_box .title{
+    padding-top: 20px;
+}
+.money{
+    color: rgb(195,13,35);
+}
+.order_zhuangTai{
+   clear: both;
+    text-align: center;
+    margin-top: 1rem;
+}
+.wuLiu{
+    margin: auto 30px;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+.wuLiu .information{
+    margin-bottom: 0px;
+}
+.wuLiu .time{
+    margin-top: 0px;
+}
+.active{
+    color: rgb(244,100,37);
+}
+.active2{
+    color: rgb(244,133,80);
+}

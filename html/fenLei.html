@@ -21,39 +21,6 @@
 </head>
 
 <body>
-<!--<header >-->
-    <!--<div class="head_box">-->
-        <!--<div class="heade_left heade_left3">-->
-            <!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left">返回 关闭</a>-->
-        <!--</div>-->
-        <!--<div class="heade_left">-->
-            <!--搜索-->
-        <!--</div>-->
-        <!--<div class="heade_left heade_left2">-->
-            <!--<svg class="icon" aria-hidden="true">-->
-                <!--<use xlink:href="#icon-gengduo"></use>-->
-            <!--</svg>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</header>-->
-<header>
-    <div class="head_box">
-        <div class="heade_left heade_left3">
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-fanhui"></use>
-            </svg>
-            <a href="javascript:history.go(-1)">返回 关闭</a>
-        </div>
-        <div class="heade_left">
-            分类
-        </div>
-        <div class="heade_left heade_left2">
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-gengduo"></use>
-            </svg>
-        </div>
-    </div>
-</header>
 <div class="mui-content">
     <div class="mui-content-padded " >
         <div class="mui-input-row mui-search ">
@@ -138,7 +105,6 @@
 <script>
     function choose(v){
         var a=document.getElementsByClassName("btns");
-        console.log(a);
         for(var i=0;i< a.length;i++){
             if(v !=i){
                 a[i].style.color="black";

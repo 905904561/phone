@@ -2,39 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
     <title>Title</title>
-    <link rel="stylesheet" href="../css/brand.css">
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/popularity_list.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <title>Title</title>
 </head>
 <body>
-<header>
-    <div class="head_box">
-        <div class="heade_left heade_left3">
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-fanhui"></use>
-            </svg>
-            <a href="javascript:history.go(-1)">返回 关闭</a>
+<div class="brand_list">
+    <div class="top_img">
+        <img class="backgroung_img" src="../images/ad2.png" width="100%">
+    </div>
+    <div class="brandList_choose">
+        <div class="left ">综合</div>
+        <div class="left">
+            价格
+            <img src="../images/up.png" class="up">
+            <img src="../images/down.png" class="down">
         </div>
-        <div class="heade_left">
-            人气榜单
-        </div>
-        <div class="heade_left heade_left2">
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-gengduo"></use>
-            </svg>
+        <div class="left ">人气</div>
+        <div class="left">
+            新品
+            <img src="../images/up.png" class="up">
+            <img src="../images/down.png" class="down">
         </div>
     </div>
-</header>
-<!--背景图片-->
-<div class="img_box">
-    <img src="../images/img03.jpg">
-</div>
-<div class="recommend_box">
-    <div class="recommend_title">
-       TOP20
-    </div>
-    <div class="recommend_title_line"></div>
     <div class="content">
         <div class="new">
             <div class="new-box">
@@ -58,8 +52,11 @@
                 <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
             </div>
         </div>
+    </div>
+    <div class="shop_bottom">
+        收藏店铺
+    </div>
 </div>
-<script src="../iconfont/iconfont.js"></script>
-</div>
+<script src="../js/jquery-3.2.1.min.js"></script>
 </body>
 </html>

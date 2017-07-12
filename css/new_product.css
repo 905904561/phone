@@ -9,10 +9,10 @@
     list-style: none;
     width: 24%;
     text-align: center;
-    font-family: "微软雅黑";
+    font-family: "宋体";
     border-right: 1px solid darkgrey;
     line-height: 25px;
-    font-size: 1.3em;
+    font-size: 1.2rem;
 }
 .select_box ul li:last-child{
     border-right: 0px;
@@ -20,4 +20,21 @@
 .select_box .shangXia{
     width: 14px;
     height: 28px;
+}
+.active{
+color: rgb(244,100,37);
+}
+
+.choose_content{
+    width: 96%;
+    margin: 60px auto 0px auto ;
+    font-size: 1.2rem;
+}
+.choose_1{
+    display: inline-block;
+    border: 1px solid rgb(170,170,170);
+    padding: 10px;
+    text-align: center;
+    line-height: 1.4rem;
+    margin-left: 10px;
 }

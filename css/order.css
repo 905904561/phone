@@ -1,0 +1,53 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    color: rgb(102,102,102);
+    font-family: "微软雅黑";
+
+}
+.box{
+    width: 100%;
+}
+.nav{
+    width: 96%;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+.nav ul li{
+    list-style: none;
+    float: left;
+    width: 25%;
+    padding-top: 1.0rem;
+    margin-bottom: 1.0rem;
+    color: rgb(102,102,102);
+    font-size: 1.0rem;
+    box-sizing: border-box;
+
+}
+.new-box{
+    /*border:1px solid red;*/
+    position: relative;
+    padding: 0px;
+}
+.new .state{
+    background-color: rgb(159,159,159);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    bottom: 0rem;
+    box-sizing: border-box;
+    padding: 2.1rem 1rem 1rem 2.1rem;
+    float: left;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+}
+.active_tui{
+   background-color: rgb(244,100,37);
+}

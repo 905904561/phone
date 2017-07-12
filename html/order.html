@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <script src="../iconfont/iconfont.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div class="box">
+    <!--头部菜单栏-->
+    <div class="nav">
+        <ul>
+            <li>待确认</li>
+            <li>已发货</li>
+            <li>已完成</li>
+            <li>退款/退货</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="new">
+            <div class="new-box">
+                <img src="../images/pro8.png" alt="">
+                <p class="new-title">泰国电话卡就是牛，信号就是好</p>
+                <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
+                <div class="state">已支付待确认</div>
+            </div>
+
+            <!--状态-->
+
+            <div class="new-box">
+                <img src="../images/pro8.png" alt="">
+                <p class="new-title">泰国电话卡就是牛，信号就是好</p>
+                <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
+                <div class="state">已发货</div>
+            </div>
+
+            <div class="new-box">
+                <img src="../images/pro8.png" alt="">
+                <p class="new-title">泰国电话卡就是牛，信号就是好</p>
+                <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
+                <div class="state">已完成</div>
+            </div>
+
+            <div class="new-box">
+                <img src="../images/pro8.png" alt="">
+                <p class="new-title">泰国电话卡就是牛，信号就是好</p>
+                <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
+                <div class="state  active_tui">退款/退货</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bottom_box">
+        <div class="bottom_list">
+            <div class="shouye "onclick="choose(0)">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-shouye"></use>
+                </svg>
+                <p class="mui-tab-label">首页</p>
+            </div>
+            <div class="shouye" onclick="choose(1)">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-fenlei"></use>
+                </svg>
+                <p class="mui-tab-label">分类</p>
+            </div>
+            <div class="shouye active" onclick="choose(2)">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-dingdan3"></use>
+                </svg>
+                <p class="mui-tab-label ">订单</p>
+            </div>
+            <div class="shouye" onclick="choose(3)">
+                <svg class="icon" aria-hidden="true" style="font-weight: 600">
+                    <use xlink:href="#icon-wode1"></use>
+                </svg>
+                <p class="mui-tab-label">我的</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/swiper.jquery.min.js"></script>
+<script language="javascript">
+    function choose(v){
+        var a=document.getElementsByClassName("shouye");
+        for(var i=0;i< a.length;i++){
+            if(v !=i){
+                a[i].style.color="black";
+            }
+        }
+        a[v].style.color="rgb(244,100,37)";
+    }
+</script>
+</body>
+</html>

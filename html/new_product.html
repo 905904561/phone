@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Title</title>
     <link rel="stylesheet" href="../css/brand.css">
     <link rel="stylesheet" href="../css/index.css">
@@ -45,38 +47,47 @@
         <li>品牌</li>
     </ul>
 </div>
+<div class="choose_content">
+    <span class="choose_1">全部(0)</span>
+    <span class="choose_1">HAPPY(0)</span>
+    <span class="choose_1">DOCOMO(0)</span>
+    <span class="choose_1">DOCOMO(0)</span>
+
+</div>
 <div class="content">
-    <div class="details">
-        <img src="../images/pro1_05.png">
-        <p class="details_title">泰国电话卡就是牛，信号就是好</p>
-        <p class="details_title">供货价：<span class="money">￥29.9</span></p>
-    </div>
-    <div class="details">
-        <img src="../images/pro1_05.png">
-        <p class="details_title">泰国电话卡就是牛，信号就是好</p>
-        <p class="details_title">供货价：<span class="money">￥29.9</span></p>
-    </div>
-    <div class="details">
-        <img src="../images/pro1_05.png">
-        <p class="details_title">泰国电话卡就是牛，信号就是好</p>
-        <p class="details_title">供货价：<span class="money">￥29.9</span></p>
-    </div>
-    <div class="details">
-        <img src="../images/pro1_05.png">
-        <p class="details_title">泰国电话卡就是牛，信号就是好</p>
-        <p class="details_title">供货价：<span class="money">￥29.9</span></p>
-    </div>
-    <div class="details">
-        <img src="../images/pro1_05.png">
-        <p class="details_title">泰国电话卡就是牛，信号就是好</p>
-        <p class="details_title">供货价：<span class="money">￥29.9</span></p>
-    </div>
-    <div class="details">
-        <img src="../images/pro1_05.png">
-        <p class="details_title">泰国电话卡就是牛，信号就是好</p>
-        <p class="details_title">供货价：<span class="money">￥29.9</span></p>
+    <div class="new">
+        <div class="new-box">
+            <img src="../images/pro8.png" alt="">
+            <p class="new-title">泰国电话卡就是牛，信号就是好</p>
+            <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
+        </div>
+        <div class="new-box">
+            <img src="../images/pro8.png" alt="">
+            <p class="new-title">泰国电话卡就是牛，信号就是好</p>
+            <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
+        </div>
+        <div class="new-box">
+            <img src="../images/pro8.png" alt="">
+            <p class="new-title">泰国电话卡就是牛，信号就是好</p>
+            <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
+        </div>
+        <div class="new-box">
+            <img src="../images/pro8.png" alt="">
+            <p class="new-title">泰国电话卡就是牛，信号就是好</p>
+            <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
+        </div>
     </div>
 </div>
 <script src="../iconfont/iconfont.js"></script>
+<script type="text/JavaScript" src="../js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+        $(function(){
+            var menuA = $(".select_box li");
+            menuA.click(function(){
+                menuA.removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+</script>
 </body>
 </html>

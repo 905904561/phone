@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/erJiFeiLei.css">
+</head>
+<body>
+<div class="phone_title">
+   <span class="xian">——</span> &nbsp;电话卡&nbsp;<span class="xian">——</span>
+</div>
+<div class="new">
+    <div class="new-box">
+        <img src="../images/pro8.png" alt="">
+        <p class="new-title">泰国电话卡就是牛，信号就是好</p>
+        <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
+    </div>
+    <div class="new-box">
+        <img src="../images/pro8.png" alt="">
+        <p class="new-title">泰国电话卡就是牛，信号就是好</p>
+        <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
+    </div>
+    <div class="new-box">
+        <img src="../images/pro8.png" alt="">
+        <p class="new-title">泰国电话卡就是牛，信号就是好</p>
+        <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
+    </div>
+    <div class="new-box">
+        <img src="../images/pro8.png" alt="">
+        <p class="new-title">泰国电话卡就是牛，信号就是好</p>
+        <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
+    </div>
+    <div class="new-box">
+        <img src="../images/pro8.png" alt="">
+        <p class="new-title">泰国电话卡就是牛，信号就是好</p>
+        <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
+    </div>
+    <div class="new-box">
+        <img src="../images/pro8.png" alt="">
+        <p class="new-title">泰国电话卡就是牛，信号就是好</p>
+        <p class="new-price">供货价：<span class="money">￥ 29.9</span></p>
+    </div>
+</div>
+    <div class="phone_bottom">
+        <ul>
+            <li class="active">电话卡</li>
+            <li>流量卡</li>
+            <li>电话卡</li>
+            <li>流量卡</li>
+            <li>流量卡</li>
+        </ul>
+    </div>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".phone_bottom li").click(function(){
+            $(this).addClass("active");
+            $(this).siblings().removeClass("active");
+        });
+    });
+</script>

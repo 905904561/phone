@@ -1,0 +1,40 @@
+.brand_list{
+    width: 100%;
+}
+.brandList_choose{
+    width: 96%;
+    margin: 0 auto;
+    color: rgb(102,102,102);
+}
+.brandList_choose .left{
+    width: 25%;
+    text-align: center;
+    float: left;
+    font-size: 1.1rem;
+    line-height: 2.4rem;
+    font-family: "微软雅黑";
+    position: relative;
+}
+.brandList_choose .left .down{
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+
+}
+.brandList_choose .left .up{
+    position: absolute;
+    top: 0.9rem;
+    right: 0.4rem;
+}
+.shop_bottom{
+    width: 100%;
+    position: fixed;
+    bottom: 0rem;
+    background-color: rgb(121,121,121);
+    opacity: 0.6;
+    line-height: 2.8rem;
+    text-align: center;
+    color: white;
+    font-family: "宋体";
+    font-size: 1.2rem;
+}

@@ -14,13 +14,6 @@ header{
 .mui-content-padded {
     margin: 0px 10px;
 }
-/*.mui-icon {*/
-    /*line-height: inherit;*/
-/*}*/
-/*.mui-content-padded {*/
-    /*margin: 10px auto;*/
-    /*width: 96%;*/
-/*}*/
 .content_left{
     width: 30%;
     float: left;
@@ -47,7 +40,6 @@ header{
 }
 
 .content_left ul li{
-    /*color: rgb(51,51,51);*/
     border-right: 1px solid rgb(239,239,239);
     border-bottom: 1px solid  rgb(239,239,239);
     line-height: 2.5em;
@@ -60,9 +52,6 @@ header{
      background-color: white;
 }
 .fenLei_details ul li img{
-    /*width: 38px;*/
-    /*height: 38px;*/
-    /*max-width: 20px;*/
     width: 100%;
     background-size: 100% 100%;
 }
