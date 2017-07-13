@@ -11,48 +11,41 @@
 
 </head>
 <body>
-<header>
-    <div class="head_box">
-        <div class="heade_left heade_left3">
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-fanhui"></use>
-            </svg>
-            <a href="javascript:history.go(-1)">返回 关闭</a>
-        </div>
-        <div class="heade_left">
-           新品
-        </div>
-        <div class="heade_left heade_left2">
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-gengduo"></use>
-            </svg>
-        </div>
-    </div>
-</header>
 <!--新品-->
 <div class="img_box">
     <img src="../images/img03.jpg">
 </div>
 <!--筛选条件-->
 <div class="select_box">
-    <ul>
-        <li>综合</li>
-        <li>价格
-            <span class="shangXia">
+    <div class="ul_box">
+        <ul>
+            <li>综合</li>
+            <li>价格
+                <span class="shangXia">
                 <img src="../images/up.png" class="down_img">
-                <!--<img src="../images/down.png"class="up_img">-->
+                    <!--<img src="../images/down.png"class="up_img">-->
             </span>
-        </li>
-        <li>分类</li>
-        <li>品牌</li>
-    </ul>
+            </li>
+            <li>分类</li>
+            <li>品牌</li>
+        </ul>
+    </div>
 </div>
-<div class="choose_content">
-    <span class="choose_1">全部(0)</span>
-    <span class="choose_1">HAPPY(0)</span>
-    <span class="choose_1">DOCOMO(0)</span>
-    <span class="choose_1">DOCOMO(0)</span>
-
+<div class="tab_box">
+<!--品牌-->
+    <div class="choose_content " id="brand_content" style="display: none">
+        <span class="choose_1">全部(1)</span>
+        <span class="choose_1">HAPPY(2)</span>
+        <span class="choose_1">DOCOMO(3)</span>
+        <span class="choose_1">DOCOMO(4)</span>
+    </div>
+    <!--分类-->
+    <div class="choose_content "id="fenLei_content" style="display: none" >
+        <span class="choose_1">全部(1)</span>
+        <span class="choose_1">wifi(2)</span>
+        <span class="choose_1">电话卡(3)</span>
+        <span class="choose_1">电话卡(4)</span>
+    </div>
 </div>
 <div class="content">
     <div class="new">
@@ -81,11 +74,28 @@
 <script src="../iconfont/iconfont.js"></script>
 <script type="text/JavaScript" src="../js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
-        $(function(){
-            var menuA = $(".select_box li");
-            menuA.click(function(){
-                menuA.removeClass("active");
-                $(this).addClass("active");
+
+
+        $(document).ready(function() {
+            $(".select_box li").click(function(){
+                var index = $(".select_box li").index(this);
+                $(this).addClass("active").siblings().removeClass("active");
+            });
+            $(".select_box  li:eq(0)") .click(function(){
+                $("#brand_content").hide();
+                $("#fenLei_content").hide();
+            });
+            $(".select_box  li:eq(1)") .click(function(){
+                $("#brand_content").hide();
+                $("#fenLei_content").hide();
+            });
+            $(".select_box  li:eq(2)") .click(function(){
+                $("#brand_content").toggle();
+                $("#fenLei_content").hide();
+            });
+            $(".select_box  li:eq(3)").click(function(){
+                $("#fenLei_content").toggle();
+                $("#brand_content").hide();
             });
         });
 </script>

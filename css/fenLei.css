@@ -18,10 +18,12 @@ header{
     width: 30%;
     float: left;
     text-align: center;
+    position: fixed;
 }
 .content_right{
     width: 70%;
-    float: left;
+    float: right;
+    /*clear: both;*/
 }
 .content_box{
     width: 96%;
@@ -55,7 +57,14 @@ header{
     width: 100%;
     background-size: 100% 100%;
 }
-.active{
+a{
+    color: black;
+}
+/*.active{*/
+    /*color: rgb(244,100,37);*/
+    /*background: url("../images/left_tou.png") no-repeat  9%;*/
+/*}*/
+.current {
     color: rgb(244,100,37);
-    background: url("../images/left_tou.png") no-repeat  9%;
+    background: url("../images/left_tou.png") no-repeat 10% ;
 }

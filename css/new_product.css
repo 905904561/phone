@@ -1,18 +1,19 @@
 .select_box{
     width: 100%;
     float: left;
-    border-bottom: 1px solid darkgrey;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 .select_box ul li{
     float: left;
     list-style: none;
-    width: 24%;
+    width: 25%;
     text-align: center;
     font-family: "宋体";
     border-right: 1px solid darkgrey;
     line-height: 25px;
     font-size: 1.2rem;
+    box-sizing: border-box;
 }
 .select_box ul li:last-child{
     border-right: 0px;
@@ -37,4 +38,13 @@ color: rgb(244,100,37);
     text-align: center;
     line-height: 1.4rem;
     margin-left: 10px;
+}
+.select_box .ul_box{
+    width: 96%;
+    margin: 0 auto;
+    text-align: center;
+}
+.select_box .ul_box ul{
+    margin: 0px;
+    padding: 0px;
 }
