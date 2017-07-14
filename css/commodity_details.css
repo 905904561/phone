@@ -1,14 +1,9 @@
 .img_box{
     width: 100%;
-    /*height: 350px;*/
     overflow:hidden;
-    /*background: url("../images/pro_b.png")no-repeat;*/
-    /*background-size: 100% 100%;*/
 }
 .img_box img {
     width: 100%;
-    /*height: 350px;*/
-    /*max-height: 350px;*/
     max-width:100%;
     max-height:100%;
     background-size: 100% 100%;
@@ -17,8 +12,12 @@
     width: 96%;
     margin: 0 auto;
 }
+.details_box p{
+    margin-top: 10px;
+    margin-bottom: 10PX;
+}
 .details_box .title_1{
-    font-size: 1.3em;
+    font-size: 1.0em;
     font-family: "微软雅黑";
 }
 .details_box .title_1 span{
@@ -35,7 +34,7 @@
 }
 .div_background{
     width: 100%;
-    height: 10px;
+    height: 5px;
     background-color:#f0e9e5;
     float: left;
 }
@@ -43,7 +42,7 @@
 .information_box .details_information{
     width: 96%;
     margin: 0 auto;
-    line-height: 3em;
+    line-height: 2.3em;
 }
 .information_left .place{
     border-bottom: 1px solid darkgray;
@@ -225,10 +224,4 @@
 
 
 
-/*.box{*/
-    /*position: fixed;*/
-    /*left:0;*/
-    /*top:0;*/
-    /*!*height: 80%;*!*/
-    /*background-color: white;*/
-/*}*/
+
