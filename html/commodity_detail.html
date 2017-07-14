@@ -10,24 +10,24 @@
 
 </head>
 <body>
-<header>
-    <div class="head_box">
-        <div class="heade_left heade_left3">
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-fanhui"></use>
-            </svg>
-            <a href="javascript:history.go(-1)">返回 关闭</a>
-        </div>
-        <div class="heade_left">
-           搜索
-        </div>
-        <div class="heade_left heade_left2">
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-gengduo"></use>
-            </svg>
-        </div>
-    </div>
-</header>
+<!--<header>-->
+    <!--<div class="head_box">-->
+        <!--<div class="heade_left heade_left3">-->
+            <!--<svg class="icon" aria-hidden="true">-->
+                <!--<use xlink:href="#icon-fanhui"></use>-->
+            <!--</svg>-->
+            <!--<a href="javascript:history.go(-1)">返回 关闭</a>-->
+        <!--</div>-->
+        <!--<div class="heade_left">-->
+           <!--搜索-->
+        <!--</div>-->
+        <!--<div class="heade_left heade_left2">-->
+            <!--<svg class="icon" aria-hidden="true">-->
+                <!--<use xlink:href="#icon-gengduo"></use>-->
+            <!--</svg>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</header>-->
 <div class="img_box">
     <img src="../images/pro_b.png">
 </div>
@@ -53,6 +53,7 @@
 <div class="choose_type">
     选择 取件方式 套餐类型<span>></span>
 </div>
+<div class="div_background"></div>
 <div class="intruduction">
     <div class="intruduction_left">
         图文介绍
@@ -199,27 +200,21 @@
 </div>
 
 <script src="../js/jquery-3.2.1.min.js"></script>
-<script src="../js/layer.js"></script>
 <script src="../iconfont/iconfont.js"></script>
 <script>
-//    $('.choose_type').on('click', function() {
-//        var pageii = layer.open({
-//            type: 1,
-//            btn: '关闭全部',
-//            content: '<iframe src="combo_type.html"></iframe>',
-//            area: ['100%', '100%'],
-//            style: 'position:fixed; left:0; top:10%;  border:none;'
-//        });
-//    })
-
-        $(".choose_type").click(function(){
-            $(".box").show();
-        });
-
         $(".close").click(function(){
             $(".box").hide();
         });
-
+        $(".choose_type").click(function () {
+            $(".box").css("position", "absolute");
+            $(".box").css("top", $(".box").offset().top+50);
+            $(".box").css("left", $(".choose_type").offset().right);
+            if ($(".box").css("display") == "none") {
+                $(".box").show("1000");
+            } else {
+                $(".box").hide("1000");
+            }
+        });
 </script>
 </body>
 </html>

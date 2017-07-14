@@ -209,6 +209,26 @@
                         <span class=""><img src="../images/pro7.png" ></span>
                         <div class="mui-media-body">wifi</div></a></li>
                 </ul>
+                <ul class="mui-table-view mui-grid-view mui-grid-9">
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
+                        <span class=""><img src="../images/pro7.png" ></span>
+                        <div class="mui-media-body">wifi</div></a></li>
+                </ul>
             </div>
         </div>
 
@@ -217,6 +237,8 @@
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script>
     $(function() {
+        $('#floor6').height($(window).height());
+        console.log($('#floor6').height());
         $(window).scroll(function() {
             var top = $(document).scrollTop(); //屏幕滚动的距离
             // console.log(top);
@@ -227,7 +249,7 @@
                 var m = $(this); //每个楼层所在的对象
                 var itemTop = m.offset().top;//为每个楼层的高度
                 //获取偏移 有左右
-                 console.log(m.offset().top);
+//                 console.log(m.offset().top);
                 if (top > itemTop-20) {//这里就解决了临界的问题
                     currentId = '#' + m.attr('id');//如果大于当前楼层的高度，就把当前楼层的高度赋给currentId
                 } else {
@@ -240,7 +262,7 @@
             if(currentId&&currentLink.attr('href')!=currentId){
                 //1是当高度还很低，没达到时，使currentId为空,2是当前的current所对应的a的href属性不为本身时，
                 currentLink.removeClass('current');//去掉不正确的样式
-                $menu.find('[href="'+currentId+'"]').addClass('current');//找到正确的链接，加上样式
+                $menu.find('[href="'+currentId+'"]').children().addClass('current');//找到正确的链接，加上样式
             }
         });
         // 滚动监听

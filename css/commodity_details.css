@@ -189,10 +189,6 @@
     float: left;
 
 }
-/*.bottom_box .bottom_left .bottom_shop{*/
-    /*width: 50%;*/
-    /*float: left;*/
-/*}*/
 .bottom_box .bottom_right{
     width: 75%;
     float: left;
@@ -202,10 +198,11 @@
     -webkit-transform:scale(2,2);
     -moz-transform:scale(2,2);
     -transform:scale(2,2);
+    height: 12px;
 }
 .bottom_box .bottom_left .bottom_QQ p{
    margin-bottom: 0px;
-    font-size: 0.7em;
+    font-size: 0.9em;
     padding-bottom: 0px;
 }
 .bottom_box .bottom_right .right_save{
@@ -215,7 +212,7 @@
     color: white;
     font-family: "微软雅黑";
     text-align: center;
-    line-height: 2.3em;
+    line-height: 2.5em;
     font-size: 1.2em;
 }
 .bottom_box .bottom_right .right_save_2{
