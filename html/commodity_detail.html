@@ -184,13 +184,23 @@
         <div class="content_middle">
             <p>套餐类型:</p>
             <div class="type">
-                8天 2.5GB 4G流量+无限2G流量（含通话）赠送邮寄到家
+                <marquee direction=left scrollamount=5>
+                    8天 2.5GB 4G流量+无限2G流量（含通话）赠送邮寄到家
+                    8天 2.5GB 4G流量+无限2G流量（含通话）赠送邮寄到家
+                </marquee>
+
             </div>
             <div class="type">
-                8天 2.5GB 4G流量+无限2G流量（含通话）赠送邮寄到家
+                <marquee direction=left scrollamount=5>
+                    8天 2.5GB 4G流量+无限2G流量（含通话）赠送邮寄到家
+                    8天 2.5GB 4G流量+无限2G流量（含通话）赠送邮寄到家
+                </marquee>
             </div>
             <div class="type">
-                8天 2.5GB 4G流量+无限2G流量（含通话）赠送邮寄到家
+                <marquee direction=left scrollamount=5>
+                    8天 2.5GB 4G流量+无限2G流量（含通话）赠送邮寄到家
+                    8天 2.5GB 4G流量+无限2G流量（含通话）赠送邮寄到家
+                </marquee>
             </div>
         </div>
     </div>
@@ -205,14 +215,12 @@
         $(".close").click(function(){
             $(".box").hide();
         });
+
         $(".choose_type").click(function () {
-            $(".box").css("position", "absolute");
-            $(".box").css("top", $(".box").offset().top+50);
-            $(".box").css("left", $(".choose_type").offset().right);
             if ($(".box").css("display") == "none") {
-                $(".box").show("1000");
+                $(".box").show("3000");
             } else {
-                $(".box").hide("1000");
+                $(".box").hide("3000");
             }
         });
 </script>

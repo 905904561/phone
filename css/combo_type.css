@@ -6,8 +6,7 @@ body{
     width: 100%;
     margin-bottom: 55px;
     position: fixed;
-    /*top:15%;*/
-    bottom: 0px;
+    bottom: -55px;
     background-color: white;
 }
 .box .content_box{
@@ -30,7 +29,7 @@ body{
 .box .content_box .content_middle{
     width: 100%;
     clear: both;
-
+    margin-top: 1.8rem;
     color:rgb(129,129,129);
 }
 .box .content_box .content_middle p{
@@ -55,7 +54,7 @@ body{
     width: 100%;
     background-color: rgb(246,246,246);
     color:rgb(103,103,103);
-    line-height: 2em;
+    line-height: 1.7em;
     font-family: "微软雅黑";
     font-size: 1.1em;
     padding: 5px 0px;
@@ -71,6 +70,6 @@ body{
     font-family: "微软雅黑";
     text-align: center;
     background-color: rgb(170,170,170);
-    line-height: 2em;
+    line-height: 2.5em;
     font-size: 1.3em;
 }
