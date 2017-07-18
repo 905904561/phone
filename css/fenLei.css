@@ -60,11 +60,11 @@ header{
 a{
     color: black;
 }
-/*.active{*/
-    /*color: rgb(244,100,37);*/
-    /*background: url("../images/left_tou.png") no-repeat  9%;*/
-/*}*/
+
 .current {
     color: rgb(244,100,37);
     background: url("../images/left_tou.png") no-repeat 10% ;
+}
+ .active_p{
+    color:rgb(244,100,37);
 }

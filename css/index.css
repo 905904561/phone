@@ -128,7 +128,7 @@ body{
     padding-left: 0px;
 }
 .new{
-    overflow: auto;
+    /*overflow: auto;*/
     margin-top: 15px;
 }
 .new-box{
@@ -255,10 +255,7 @@ body{
     color: rgb(244,100,37);
 }
 
-body{
-    margin: 0px;
-    padding: 0px;
-}
+
 .bottom_box{
     width: 100%;
     bottom: 0px;
@@ -286,8 +283,8 @@ body{
     fill: currentColor;
     overflow: hidden;
 }
-.bottom_box .bottom_list .shouye .icon{
-    width: 1.3rem;
-    height: 1.3rem;
+.bottom_box .bottom_list .shouye .icon {
+    width: 1.6rem;
+    height: 1.8rem;
     margin-top: 20px;
 }

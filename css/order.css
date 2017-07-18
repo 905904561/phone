@@ -12,6 +12,9 @@ body{
     width: 96%;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid darkgrey;
 }
 .nav ul{
     margin: 0px;
@@ -21,13 +24,24 @@ body{
     list-style: none;
     float: left;
     width: 25%;
-    padding-top: 1.0rem;
-    margin-bottom: 1.0rem;
+    /*padding-top: 1.0rem;*/
+    /*margin-bottom: 1.0rem;*/
     color: rgb(102,102,102);
     font-size: 1.0rem;
     box-sizing: border-box;
+    border-right: 1px solid rgb(239,239,239);
+    line-height: 2.3rem;
+    text-align: center;
 
 }
+.select_box{
+    border-bottom: 1px solid rgb(239,239,239);
+    margin-bottom: 2.0rem;
+}
+
+/*.nav ul li:last-child {*/
+    /*border-right: 0px;*/
+/*}*/
 .new-box{
     /*border:1px solid red;*/
     position: relative;

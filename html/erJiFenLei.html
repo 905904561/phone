@@ -46,10 +46,12 @@
     </div>
 </div>
     <div class="phone_bottom">
-        <ul>
+        <ul id="J_Fix">
             <li class="active">电话卡</li>
             <li>流量卡</li>
             <li>电话卡</li>
+            <li>流量卡</li>
+            <li>流量卡</li>
             <li>流量卡</li>
             <li>流量卡</li>
         </ul>
@@ -64,4 +66,17 @@
             $(this).siblings().removeClass("active");
         });
     });
+
+
+    function fixWidth() {
+        var el = document.querySelector('#J_Fix');
+        var width = [].reduce.call(el.children, function (ret, item) {
+            var computedStyle = window.getComputedStyle(item);
+            var w = parseFloat(computedStyle.width) + parseFloat(computedStyle.marginLeft) + parseFloat(computedStyle.marginRight) + parseFloat(computedStyle.paddingLeft) + parseFloat(computedStyle.paddingRight);
+            return ret + w;
+        }, 0);
+        el.style.width = width + 'px';
+    };
+
+    fixWidth();
 </script>

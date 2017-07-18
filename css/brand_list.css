@@ -10,21 +10,22 @@
     width: 50%;
     text-align: center;
     float: left;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     line-height: 2.4rem;
     font-family: "微软雅黑";
     position: relative;
 }
 .brandList_choose .left .down{
     position: absolute;
-    top: 0.4rem;
+    top: 0.6rem;
     right: 2.9rem;
-
+    height: 12px;
 }
 .brandList_choose .left .up{
     position: absolute;
-    top: 0.9rem;
+    top: 1.0rem;
     right: 2.9rem;
+    height: 12px;
 }
 .new {
     margin-top: 40px;

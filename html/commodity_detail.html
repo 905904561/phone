@@ -96,7 +96,7 @@
 </div>
     <div class="comment_details">
         <div class="comment_name">昵********称</div>
-        <div class="comment_name">评价时间： 2017-06-03</div>
+        <div class="comment_time">评价时间:2017-06-03</div>
         <p class="comment_content">
             好用，一年前去美国在别家也买过没有这个快好用，一年前去美国在别
             家也买过没有这个快好用，一年前去美国在别家也买过没有这个快
@@ -120,7 +120,7 @@
     </div>
     <div class="comment_details comment_details_2">
         <div class="comment_name">昵********称</div>
-        <div class="comment_name">评价时间： 2017-06-03</div>
+        <div class="comment_time" >评价时间:2017-06-03</div>
         <p class="comment_content">
             好用，一年前去美国在别家也买过没有这个快好用，一年前去美国在别
             家也买过没有这个快好用，一年前去美国在别家也买过没有这个快
@@ -146,10 +146,10 @@
 <div class="bottom_box">
     <div class="bottom_left">
         <div class="bottom_QQ">
-            <img src="../images/qq.png">
+            <img src="../image s/qq.png">
             <p>客服</p>
         </div>
-        <div class="bottom_QQ">
+        <div class="bottom_QQ"id="shop">
             <img src="../images/qq.png">
             <p>店铺</p>
         </div>
@@ -164,7 +164,7 @@
     </div>
 </div>
 
-
+<!--弹出框-->
 <div class="box" style="display: none">
     <div class="content_box">
         <div class="content_top">
@@ -223,6 +223,9 @@
                 $(".box").hide("3000");
             }
         });
+    $("#shop").click(function () {
+        window.location.href="shop.html";
+    })
 </script>
 </body>
 </html>

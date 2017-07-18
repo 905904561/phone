@@ -10,6 +10,7 @@
 
     <!--标准mui.css-->
     <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/brand.css">
     <link rel="stylesheet" href="../css/fenLei.css">
     <script src="../iconfont/iconfont.js"></script>
@@ -234,6 +235,35 @@
 
     </div>
 </div>
+
+<div class="bottom_box">
+    <div class="bottom_list">
+        <div class="shouye "onclick="choose(0)">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-shouye"></use>
+            </svg>
+            <p class="mui-tab-label">首页</p>
+        </div>
+        <div class="shouye active" id="fenLei" onclick="choose(1)">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-fenlei"></use>
+            </svg>
+            <p class="mui-tab-label ">分类</p>
+        </div>
+        <div class="shouye" onclick="choose(2)">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-dingdan3"></use>
+            </svg>
+            <p class="mui-tab-label">订单</p>
+        </div>
+        <div class="shouye" onclick="choose(3)">
+            <svg class="icon" aria-hidden="true" style="font-weight: 600">
+                <use xlink:href="#icon-wode1"></use>
+            </svg>
+            <p class="mui-tab-label">我的</p>
+        </div>
+    </div>
+</div>
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script>
     $(function() {
@@ -267,6 +297,18 @@
         });
         // 滚动监听
     });
+
+    function choose(v){
+        var a=document.getElementsByClassName("shouye");
+        for(var i=0;i< a.length;i++){
+            if(v !=i){
+                a[i].style.color="black";
+            }
+        }
+        a[v].style.color="rgb(244,100,37)";
+    }
+
+
 </script>
 </body>
 

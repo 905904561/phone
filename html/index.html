@@ -35,7 +35,7 @@
             <img src="../images/logo1.png">
         </div>
         <div class="search-mid">
-            <input type="text" value="" placeholder="找货源，来这就对了" class="">
+            <input type="text"  value="" placeholder="找货源，来这就对了" class="">
             <img class="img" src="../images/sousuo.png"width="20">
         </div>
     </div>
@@ -84,9 +84,9 @@
         </div>
         </div>
     </div>
-        <!--人气榜单更多-->
-        <div class="content">
-            <div class="new_product">
+    <!--人气榜单更多-->
+   <div class="content">
+            <div class="new_product" id="popularity_list">
                 <span class="brand">人气榜单</span>
                 <span class="more_brand">更多  ></span>
             </div>
@@ -111,8 +111,6 @@
             </div>
             <div class="background"></div>
         </div>
-
-
     <!--推荐-->
     <div class="recommend_box">
         <div class="recommend_title">
@@ -150,7 +148,7 @@
             </svg>
             <p class="mui-tab-label">首页</p>
         </div>
-        <div class="shouye" onclick="choose(1)">
+        <div class="shouye" id="fenLei" onclick="choose(1)">
             <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-fenlei"></use>
             </svg>
@@ -170,7 +168,6 @@
         </div>
     </div>
 </div>
-<!--<iframe src="bottom.html" name="iframe_a"  scrolling="0" frameborder="0" width="100%" ></iframe>-->
 
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/swiper.jquery.min.js"></script>
@@ -191,6 +188,22 @@
                 }
                 a[v].style.color="rgb(244,100,37)";
             }
+//     搜索
+    $(".search-mid input").click(function(){
+        window.location.href="search.html";
+    });
+//    分类
+    $(".bottom_box #fenLei").click(function(){
+        window.location.href="fenLei.html";
+    });
+//    更多新品
+    $(".content .more_brand").click(function(){
+        window.location.href="brand.html";
+    });
+//    人气榜单
+    $("#popularity_list .more_brand").click(function(){
+        window.location.href="popularity_list.html";
+    });
 </script>
 </body>
 </html>

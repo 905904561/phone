@@ -87,16 +87,18 @@
 }
 .intruduction_text .text_title{
     font-family: "微软雅黑";
-    font-size: 1.2em;
+    font-size: 1.0rem;
 }
 .intruduction_text .ziQu{
     margin-bottom: 0px;
     line-height: 1.5em;
+    font-size: 0.9rem;
 }
 .intruduction_text .youJi{
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: 1.5em;
+    font-size: 0.8rem;
 }
 .comment_box{
     width: 96%;
@@ -108,7 +110,7 @@
     width: 100%;
 }
 .comment_box ul li{
-    margin: 20px 30px 0px 0px;
+    margin: 1.0rem 1.0rem 0px 0px;
     list-style: none;
     float: left;
     line-height: 1em;
@@ -133,6 +135,10 @@
     width: 40%;
     float: left;
 }
+.comment_time{
+    width: 50%;
+    float: left;
+}
 .comment_details .comment_content{
     text-align: left;
     width: 100%;
@@ -140,7 +146,7 @@
     clear: both;
     margin-top: 30px;
     margin-bottom: 0px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-family: "微软雅黑";
 }
 .comment_img{
@@ -152,7 +158,7 @@
     width: 100%;
 }
 .comment_img ul li{
-    margin: 20px 30px 0px 0px;
+    margin: 1.0rem 1.0rem 0px 0px;
     list-style: none;
     float: left;
     line-height: 1em;
@@ -167,7 +173,7 @@
     font-family: "微软雅黑";
 }
 .type{
-    font-size: 1.2em;
+    font-size: 1.0em;
     color: gray;
 }
 .bottom_box{
