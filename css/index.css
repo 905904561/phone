@@ -106,10 +106,9 @@ body{
 .content .more_brand{
     right: 10px;
     position: absolute;
+    font-size: 10px;
 }
-.content .brand_kind{
-    /*width: 30%;*/
-}
+
 .content .brand_kind img{
     float: left;
     margin-right: 10px;
@@ -137,7 +136,7 @@ body{
     width: calc((100% - 45px) / 2);
     margin:0 15px 15px 15px;
     box-sizing: border-box;
-    padding:10px;
+    padding:10px 5px;
     text-align: center;
 }
 .new-box:nth-child(odd){
@@ -147,10 +146,10 @@ body{
     width:100%;
 }
 .new-title{
-    font-size:12px;
+    font-size:0.8rem;
 }
 .new-price{
-    font-size:14px;
+    font-size:0.8rem;
 }
 .list{
     overflow: auto;
@@ -167,7 +166,8 @@ body{
     height: 160px;
 }
 .list_box .details_top{
-    padding-top: 5rem;
+    padding-top: 2rem;
+    font-size:0.9rem;
 }
 .background{
     width: 100%;
@@ -192,6 +192,9 @@ body{
 .details .details_title{
     font-family: "微软雅黑";
     font-weight: bold;
+}
+.details .details_money{
+    font-size: 0.9rem;
 }
  .money{
     color: red;

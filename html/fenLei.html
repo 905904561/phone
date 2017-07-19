@@ -23,9 +23,9 @@
 
 <body>
 <div class="mui-content">
-    <div class="mui-content-padded " >
-        <div class="mui-input-row mui-search ">
-            <input type="search" class="mui-input-clear" placeholder="找货源，来这就对了">
+    <div class="content-padded " >
+        <div class="input-row search ">
+            <input type="search" class="input-clear" placeholder="找货源，来这就对了">
         </div>
     </div>
     <!--左边选项-->
@@ -238,29 +238,29 @@
 
 <div class="bottom_box">
     <div class="bottom_list">
-        <div class="shouye "onclick="choose(0)">
+        <div class="shouye "onclick="choose(0)" id="shouye">
             <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-shouye"></use>
             </svg>
-            <p class="mui-tab-label">首页</p>
+            <div class="mui-tab-label">首页</div>
         </div>
         <div class="shouye active" id="fenLei" onclick="choose(1)">
             <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-fenlei"></use>
             </svg>
-            <p class="mui-tab-label ">分类</p>
+            <div class="mui-tab-label ">分类</div>
         </div>
         <div class="shouye" onclick="choose(2)">
             <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-dingdan3"></use>
             </svg>
-            <p class="mui-tab-label">订单</p>
+            <div class="mui-tab-label">订单</div>
         </div>
         <div class="shouye" onclick="choose(3)">
             <svg class="icon" aria-hidden="true" style="font-weight: 600">
                 <use xlink:href="#icon-wode1"></use>
             </svg>
-            <p class="mui-tab-label">我的</p>
+            <div class="mui-tab-label">我的</div>
         </div>
     </div>
 </div>
@@ -268,7 +268,7 @@
 <script>
     $(function() {
         $('#floor6').height($(window).height());
-        console.log($('#floor6').height());
+//        console.log($('#floor6').height());
         $(window).scroll(function() {
             var top = $(document).scrollTop(); //屏幕滚动的距离
             // console.log(top);
@@ -278,6 +278,7 @@
             $item.each(function() {
                 var m = $(this); //每个楼层所在的对象
                 var itemTop = m.offset().top;//为每个楼层的高度
+//                console.log(itemTop)
                 //获取偏移 有左右
 //                 console.log(m.offset().top);
                 if (top > itemTop-20) {//这里就解决了临界的问题
@@ -308,7 +309,10 @@
         a[v].style.color="rgb(244,100,37)";
     }
 
-
+    //    首页
+    $(".bottom_box #shouye").click(function(){
+        window.location.href="index.html";
+    });
 </script>
 </body>
 

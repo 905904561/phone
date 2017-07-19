@@ -19,13 +19,13 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img class="backgroung_img" src="../images/banner1.png" alt="">
+                    <img class="backgroung_img" data-src="../images/banner1.png" data-srcm="../images/mobile/banner1.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img class="backgroung_img" src="../images/banner2.png" alt="">
+                    <img class="backgroung_img" data-src="../images/banner2.png" data-srcm="../images/mobile/banner1.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img class="backgroung_img" src="../images/banner3.png" alt="">
+                    <img class="backgroung_img" data-src="../images/banner3.png" data-srcm="../images/mobile/banner1.jpg" alt="">
                 </div>
             </div>
             <!-- 如果需要分页器 -->
@@ -142,7 +142,7 @@
 </div>
 <div class="bottom_box">
     <div class="bottom_list">
-        <div class="shouye active"onclick="choose(0)">
+        <div class="shouye active"onclick="choose(0)"id="shouye">
             <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-shouye"></use>
             </svg>
@@ -154,7 +154,7 @@
             </svg>
             <p class="mui-tab-label">分类</p>
         </div>
-        <div class="shouye" onclick="choose(2)">
+        <div class="shouye" onclick="choose(2)"id="dingDan">
             <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-dingdan3"></use>
             </svg>
@@ -178,6 +178,13 @@
         paginationClickable :true,
         autoplay: 3000,//可选选项，自动滑动
     })
+    $(".backgroung_img").each(function(){
+        if(window.screen.width < 768){
+            $(this).attr("src",$(this).data("srcm"));
+        }else{
+            $(this).attr("src",$(this).data("src"));
+        }
+    })
 
     function choose(v){
                 var a=document.getElementsByClassName("shouye");
@@ -192,9 +199,17 @@
     $(".search-mid input").click(function(){
         window.location.href="search.html";
     });
+    //    首页
+    $(".bottom_box #shouye").click(function(){
+        window.location.href="index.html";
+    });
 //    分类
     $(".bottom_box #fenLei").click(function(){
         window.location.href="fenLei.html";
+    });
+    //    订单
+    $(".bottom_box #dingDan").click(function(){
+        window.location.href="order.html";
     });
 //    更多新品
     $(".content .more_brand").click(function(){
