@@ -20,7 +20,6 @@ body{
 }
 .content_refund{
     width: 100%;
-    margin-top: 18%;
 
 }
 .content_refund .order_tuiKuan{
@@ -30,11 +29,15 @@ body{
     border-bottom: none;
     display: inline;
 }
+img {
+    border: 0;
+    width: 80%;
+}
 .order_tuiKuan .mui-row{
     text-align: center;
 }
 p {
-    font-size: 16px;
+    font-size: 0.9rem;
     color:black;
 }
 .order_tuiKuan .order_details{
@@ -58,12 +61,12 @@ p {
 }
 .mui-col-sm-8 .mui-row .tuiKuan{
     text-align: right;
-    line-height: 2.6em;
+    line-height: 2.0em;
     padding-right: 15px;
 }
 .mui-col-sm-8 .mui-row .tuiHuo{
     text-align: left;
-    line-height: 2.6em;
+    line-height: 2.0em;
     padding-left: 15px;
 }
 .mui-col-sm-8 .reason{
@@ -86,6 +89,7 @@ p {
     text-align: center;
     line-height: 2.5rem;
     font-family: "宋体";
+    background-color: white;
 }
 .bottom_box .left{
     width: 50%;

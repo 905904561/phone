@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
     <title>Title</title>
     <!--标准mui.css-->
     <link rel="stylesheet" href="../css/mui.min.css">
@@ -11,10 +14,10 @@
 <div class="content_refund">
     <div class="order_tuiKuan">
         <div class="mui-row">
-            <div class="mui-col-sm-6 mui-col-xs-6 " >
+            <div class="mui-col-sm-5 mui-col-xs-5 " >
                 <img src="../images/pro17.png">
             </div>
-            <div class="mui-col-sm-6 mui-col-xs-6 order_details" >
+            <div class="mui-col-sm-7 mui-col-xs-7 order_details" >
                 <p>泰国电话卡就是牛，信号就是好</p>
                 <p >供货价:<span> ￥29.9</span></p>
             </div>
@@ -70,7 +73,7 @@
         <div class="mui-row">
             <div class="mui-col-sm-2 mui-col-xs-2 " ></div>
             <div class="mui-col-sm-8 mui-col-xs-8 " >
-                <p class="title"><span class="xian"> ——&nbsp; </span>退款金额 <span class="xian">&nbsp;  —— </span></p>
+                <p class="title"><span class="xian"> ——&nbsp; </span>退款说明 <span class="xian">&nbsp;  —— </span></p>
                 <div class="reason choose_type">
                     <div>这里是说明</div>
                 </div>
@@ -107,6 +110,12 @@
 </div>
 <script type="text/JavaScript" src="../js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
+    $(document).ready(function(){
+        $(".bottom_box div").click(function(){
+            $(this).addClass("active");
+            $(this).siblings().removeClass("active");
+        });
+    });
 </script>
 </body>
 </html>

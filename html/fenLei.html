@@ -3,12 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Hello MUI</title>
+    <title>分类</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <!--标准mui.css-->
     <link rel="stylesheet" href="../css/mui.min.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/brand.css">
@@ -18,8 +17,10 @@
         h5 {
             margin: 5px 7px;
         }
+
+
     </style>
-</head>
+
 
 <body>
 <div class="mui-content">
@@ -36,16 +37,18 @@
             <a href="#floor3"><li class="btns" >无限wifi</li></a>
             <a href="#floor4"><li class="btns" >电话卡</li></a>
             <a href="#floor5"> <li class="btns"  >电话卡</li></a>
-            <a href="#floor6" ><li class="btns" >电话卡</li></a>
+            <a href="#floor6"><li class="btns" >电话卡</li></a>
         </ul>
     </div>
     <!--右边内容-->
     <div class="content_right">
         <!--1楼-->
-        <div class="content_box" id="floor1">
+        <div class="content_box " id="floor1">
+            <div class="floor_1"></div>
             <div class="img_box">
                 <img src="../images/ad2.png">
             </div>
+            <div class="floor_1"></div>
             <div class="title_choose">
                 —— 1全球旅游 ——
             </div>
@@ -74,6 +77,7 @@
         </div>
         <!--2楼-->
         <div class="content_box" id="floor2">
+            <div id="floor_2"></div>
             <div class="title_choose">
                 —— 2全球旅游 ——
             </div>
@@ -102,6 +106,7 @@
         </div>
         <!--3楼-->
         <div class="content_box" id="floor3">
+            <div id="floor_3"></div>
             <div class="title_choose">
                 —— 3全球旅游 ——
             </div>
@@ -130,6 +135,7 @@
         </div>
         <!--4楼-->
         <div class="content_box" id="floor4">
+            <div id="floor_4"></div>
             <div class="title_choose">
                 —— 4全球旅游 ——
             </div>
@@ -158,6 +164,7 @@
         </div>
         <!--5楼-->
         <div class="content_box" id="floor5">
+            <div id="floor_5"></div>
             <div class="title_choose">
             —— 5全球旅游 ——
         </div>
@@ -186,6 +193,7 @@
         </div>
         <!--6楼-->
         <div class="content_box" id="floor6">
+            <div id="floor_6"></div>
             <div class="title_choose">
                 —— 6全球旅游 ——
             </div>
@@ -209,8 +217,6 @@
                     <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
                         <span class=""><img src="../images/pro7.png" ></span>
                         <div class="mui-media-body">wifi</div></a></li>
-                </ul>
-                <ul class="mui-table-view mui-grid-view mui-grid-9">
                     <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
                         <span class=""><img src="../images/pro7.png" ></span>
                         <div class="mui-media-body">wifi</div></a></li>
@@ -232,10 +238,16 @@
                 </ul>
             </div>
         </div>
+        <!--7楼-->
+         <div id="floor7" class="content_box">
+            <div id="floor_7"></div>
+             <div class="title_choose">
 
+             </div>
+         </div>
     </div>
 </div>
-
+<!--底部导航栏-->
 <div class="bottom_box">
     <div class="bottom_list">
         <div class="shouye "onclick="choose(0)" id="shouye">
@@ -250,13 +262,13 @@
             </svg>
             <div class="mui-tab-label ">分类</div>
         </div>
-        <div class="shouye" onclick="choose(2)">
+        <div class="shouye" onclick="choose(2)" id="dingDan">
             <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-dingdan3"></use>
             </svg>
             <div class="mui-tab-label">订单</div>
         </div>
-        <div class="shouye" onclick="choose(3)">
+        <div class="shouye" onclick="choose(3)" >
             <svg class="icon" aria-hidden="true" style="font-weight: 600">
                 <use xlink:href="#icon-wode1"></use>
             </svg>
@@ -269,19 +281,19 @@
     $(function() {
         $('#floor6').height($(window).height());
 //        console.log($('#floor6').height());
-        $(window).scroll(function() {
-            var top = $(document).scrollTop(); //屏幕滚动的距离
-            // console.log(top);
+        $(window).scroll(function() { //当用户滚动窗口时
+            var top = $(document).scrollTop() ; //屏幕滚动的距离
+//             console.log(top);
             var $item = $('.content_right').find('.content_box'); //找到了div
             var $menu = $('.content_left'); //找到了工具条
             var currentId = ''; //当前所在楼层的Id
             $item.each(function() {
                 var m = $(this); //每个楼层所在的对象
-                var itemTop = m.offset().top;//为每个楼层的高度
+                var itemTop = m.offset().top ;//为每个楼层的高度
 //                console.log(itemTop)
                 //获取偏移 有左右
 //                 console.log(m.offset().top);
-                if (top > itemTop-20) {//这里就解决了临界的问题
+                if (top > itemTop-34) {//这里就解决了临界的问题
                     currentId = '#' + m.attr('id');//如果大于当前楼层的高度，就把当前楼层的高度赋给currentId
                 } else {
                     return false;
@@ -307,11 +319,25 @@
             }
         }
         a[v].style.color="rgb(244,100,37)";
-    }
-
+    } $(".bottom_box #shouye").click(function(){
+        window.location.href="index.html";
+    });
     //    首页
     $(".bottom_box #shouye").click(function(){
         window.location.href="index.html";
+    });
+    //    分类
+    $(".bottom_box #fenLei").click(function(){
+        window.location.href="fenLei.html";
+    });
+    //    订单
+    $(".bottom_box #dingDan").click(function(){
+        window.location.href="order.html";
+    });
+
+//    二级分类
+    $(".fenLei_details li").click(function(){
+        window.location.href="erJiFenLei.html";
     });
 </script>
 </body>
