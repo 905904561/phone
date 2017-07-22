@@ -33,11 +33,19 @@ color: rgb(244,100,37);
 }
 .choose_1{
     display: inline-block;
-    border: 1px solid rgb(170,170,170);
+    border: 1px solid rgb(239,239,239);
     padding: 10px;
     text-align: center;
-    line-height: 1.4rem;
     margin-left: 10px;
+    font-size: 0.8rem;
+}
+.choose_2{
+    display: inline-block;
+    border: 1px solid rgb(239,239,239);
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 0.8rem;
 }
 .select_box .ul_box{
     width: 96%;
@@ -47,4 +55,8 @@ color: rgb(244,100,37);
 .select_box .ul_box ul{
     margin: 0px;
     padding: 0px;
+}
+.choose_1_active{
+    border: 1px solid rgb(244,100,37);
+    color: rgb(244,100,37);
 }

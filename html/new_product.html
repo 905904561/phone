@@ -23,7 +23,6 @@
             <li>价格
                 <span class="shangXia">
                 <img src="../images/up.png" class="down_img">
-                    <!--<img src="../images/down.png"class="up_img">-->
             </span>
             </li>
             <li>分类</li>
@@ -37,14 +36,14 @@
         <span class="choose_1">全部(1)</span>
         <span class="choose_1">HAPPY(2)</span>
         <span class="choose_1">DOCOMO(3)</span>
-        <span class="choose_1">DOCOMO(4)</span>
+        <span class="choose_1 choose_4 ">DOCOMO(4)</span>
     </div>
     <!--分类-->
     <div class="choose_content "id="fenLei_content" style="display: none" >
-        <span class="choose_1">全部(1)</span>
-        <span class="choose_1">wifi(2)</span>
-        <span class="choose_1">电话卡(3)</span>
-        <span class="choose_1">电话卡(4)</span>
+        <span class="choose_2">全部(1)</span>
+        <span class="choose_2">wifi(2)</span>
+        <span class="choose_2">电话卡(3)</span>
+        <span class="choose_2">电话卡(4)</span>
     </div>
 </div>
 <div class="content">
@@ -74,9 +73,7 @@
 <script src="../iconfont/iconfont.js"></script>
 <script type="text/JavaScript" src="../js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
-
-
-        $(document).ready(function() {
+ $(document).ready(function() {
             $(".select_box li").click(function(){
                 var index = $(".select_box li").index(this);
                 $(this).addClass("active").siblings().removeClass("active");
@@ -98,6 +95,29 @@
                 $("#brand_content").hide();
             });
         });
+
+//品牌里面的小选项
+ $(document).ready(function(){
+     $(".choose_content .choose_1").click(function(){
+         removeALL();
+         $(this).addClass("choose_1_active");
+         $(".choose_content").hide();
+     });
+ });
+ function removeALL(){
+     $('.choose_1').removeClass("choose_1_active");
+ }
+ //分类里面的小选项
+ $(document).ready(function(){
+     $(".choose_content .choose_2").click(function(){
+         removeALL();
+         $(this).addClass("choose_1_active");
+         $(".choose_content").hide();
+     });
+ });
+ function removeALL(){
+     $('.choose_2').removeClass("choose_1_active");
+ }
 </script>
 </body>
 </html>

@@ -50,6 +50,7 @@
 .information_box .details_information .information_left{
     width: 50%;
     float: left;
+    font-size: 0.9rem;
 }
 .information_box .details_information .information_left p{
     margin: 0%;
@@ -57,7 +58,8 @@
 .choose_type{
     width: 96%;
     margin: 0 auto;
-    line-height: 3.4em;
+    line-height: 3.1rem;
+    font-size: 0.9rem;
 }
 .choose_type span{
     float: right;
@@ -110,13 +112,16 @@
     width: 100%;
 }
 .comment_box ul li{
-    margin: 1.0rem 1.0rem 0px 0px;
+    /*margin: 1.0rem 1.0rem 0px 0px;*/
     list-style: none;
     float: left;
-    line-height: 1em;
+    line-height: 1.8em;
+    width: 33.33%;
+    font-size: 0.9rem;
+    position: relative;
 }
 .comment_box ul li:first-child{
-    font-size: 1.2em;
+    font-size: 0.9rem;
 }
 .comment_box ul li .orange{
     margin-left: 5px;
@@ -213,6 +218,8 @@
    margin-bottom: 0px;
     font-size: 0.9em;
     padding-bottom: 0px;
+    padding-top: 10px;
+    margin-top: 0px;
 }
 .bottom_box .bottom_right .right_save{
     width: 50%;
@@ -221,14 +228,36 @@
     color: white;
     font-family: "微软雅黑";
     text-align: center;
-    line-height: 2.7em;
-    font-size: 1.2em;
+    line-height: 3.2em;
+    font-size: 1.0em;
+    height: 3.2rem;
 }
 .bottom_box .bottom_right .right_save_2{
     background-color: rgb(244,100,37);
 }
+.active{
+    color: rgb(244,100,37);
+}
+.xuanXiang .text_4{
+    margin-bottom: 3.4rem;
+}
+.xuanXiang .comment_box img{
+    display: none;
+}
+.comment_box ul .dian{
+    width: 13px;
+    height: 13px;
+    border: 1px solid rgb(239,239,239);
+    border-radius: 100px;
 
-
+    box-sizing: border-box;
+    position: absolute;
+    left: 4.2rem;
+    top: 0.4rem;
+}
+.dian_avtive{
+    background-color: rgb(244,100,37);
+}
 
 
 

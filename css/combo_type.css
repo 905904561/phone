@@ -29,7 +29,7 @@ body{
 .box .content_box .content_middle{
     width: 100%;
     clear: both;
-    margin-top: 1.8rem;
+    margin-top: 1.1rem;
     color:rgb(129,129,129);
 }
 .box .content_box .content_middle p{
@@ -54,7 +54,7 @@ body{
     width: 100%;
     background-color: rgb(246,246,246);
     color:rgb(103,103,103);
-    line-height: 1.7em;
+    line-height: 1.2em;
     font-family: "微软雅黑";
     font-size: 1.1em;
     padding: 5px 0px;

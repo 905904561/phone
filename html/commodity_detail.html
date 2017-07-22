@@ -9,25 +9,8 @@
     <link rel="stylesheet" href="../css/combo_type.css">
 
 </head>
-<body>
-<!--<header>-->
-    <!--<div class="head_box">-->
-        <!--<div class="heade_left heade_left3">-->
-            <!--<svg class="icon" aria-hidden="true">-->
-                <!--<use xlink:href="#icon-fanhui"></use>-->
-            <!--</svg>-->
-            <!--<a href="javascript:history.go(-1)">返回 关闭</a>-->
-        <!--</div>-->
-        <!--<div class="heade_left">-->
-           <!--搜索-->
-        <!--</div>-->
-        <!--<div class="heade_left heade_left2">-->
-            <!--<svg class="icon" aria-hidden="true">-->
-                <!--<use xlink:href="#icon-gengduo"></use>-->
-            <!--</svg>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</header>-->
+
+
 <div class="img_box">
     <img src="../images/pro_b.png">
 </div>
@@ -55,102 +38,152 @@
 </div>
 <div class="div_background"></div>
 <div class="intruduction">
-    <div class="intruduction_left">
+    <div class="intruduction_left active">
         图文介绍
     </div>
     <div class="intruduction_left">
         <span>全部评价</span>
     </div>
 </div>
-<div class="intruduction_box">
-    <img src="../images/pro_detail.png">
+<div class="xuanXiang">
+    <div class="intruduction_box">
+        <img src="../images/pro_detail.png">
+    </div>
+    <!--具体的文字说明-->
+    <div class="intruduction_text">
+        <p class="text_title">费用包含</p>
+        <p class="ziQu">自取：单价x张数。</p>
+        <p class="youJi">邮寄：单价x张数+中通包邮（顺丰按实际邮费收取）。</p>
+    </div>
+    <div class="intruduction_text">
+        <p class="text_title">产品说明</p>
+        <p class="ziQu">（1）8天2G 4G+无限3G流量：每天250MB高速流量。</p>
+        <p class="youJi">（2）5天无限4G流量:4G高速流量.有效期:激活后5天</p>
+        <p class="youJi">（3）6天无限4G流量;4G高速流量.有效期:激活后5天</p>
+    </div>
+    <div class="intruduction_text">
+        <p class="text_title">预定需知</p>
+        <p class="ziQu">购买前请务必联系客服确认手机型号适配类型</p>
+        <p class="youJi">适用国家以外不能插卡测试</p>
+    </div>
+    <div class="intruduction_text text_4">
+        <p class="text_title">退改规则</p>
+        <p class="ziQu">1.取消/更改订单请及时与客服联系</p>
+        <p class="youJi">2.由于商品性质不支持7天无理由退换，如因买家原因需退货，则则未拆卡</p>
+    </div>
 </div>
-<!--具体的文字说明-->
-<div class="intruduction_text">
-    <p class="text_title">费用包含</p>
-    <p class="ziQu">自取：单价x张数。</p>
-    <p class="youJi">邮寄：单价x张数+中通包邮（顺丰按实际邮费收取）。</p>
-</div>
-<div class="intruduction_text">
-    <p class="text_title">产品说明</p>
-    <p class="ziQu">（1）8天2G 4G+无限3G流量：每天250MB高速流量。</p>
-    <p class="youJi">（2）5天无限4G流量：4G高速流量。有效期：激活后5天</p>
-    <p class="youJi">（3）6天无限4G流量：4G高速流量。有效期：激活后5天</p>
-</div>
-<div class="intruduction_text">
-    <p class="text_title">预定需知</p>
-    <p class="ziQu">购买前请务必联系客服确认手机型号适配类型</p>
-    <p class="youJi">适用国家以外不能插卡测试</p>
-</div>
-<div class="intruduction_text">
-    <p class="text_title">退改规则</p>
-    <p class="ziQu">1.取消/更改订单请及时与客服联系</p>
-    <p class="youJi">2.由于商品性质不支持7天无理由退换，如因买家原因需退货，则则未拆卡</p>
-</div>
-<div class="comment_box">
-    <ul>
-        <li>累计评价</li>
-        <li>全部评价<img class="orange" src="../images/selected.png"></li>
-        <li>有图评价</li>
-    </ul>
-</div>
-    <div class="comment_details">
-        <div class="comment_name">昵********称</div>
-        <div class="comment_time">评价时间:2017-06-03</div>
-        <p class="comment_content">
-            好用，一年前去美国在别家也买过没有这个快好用，一年前去美国在别
-            家也买过没有这个快好用，一年前去美国在别家也买过没有这个快
-        </p>
-        <div class="comment_img">
-            <ul>
-                <li><img src="../images/pinglun.png"></li>
-                <li><img src="../images/pinglun.png"></li>
-                <li><img src="../images/pinglun.png"></li>
-            </ul>
-        </div>
-        <div class="reply">
-            <p class="comment_reply">
-               回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
-                回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
+<div class="xuanXiang" style="display: none">
+    <div class="comment_box">
+        <ul>
+            <li>累计评价</li>
+            <li class="pingJia_title">全部评价<div class="dian dian_avtive" id="dian_1" style="display: block"></div></li>
+            <li class="pingJia_title">有图评价<div class="dian" id="dian_2"></div></li>
+        </ul>
+    </div>
+    <div class="pingJia_1" id="pingJia_1" style="display: block">
+        <div class="comment_details">
+            <div class="comment_name">1昵********称</div>
+            <div class="comment_time">评价时间:2017-06-03</div>
+            <p class="comment_content">
+                好用，一年前去美国在别家也买过没有这个快好用，一年前去美国在别
+                家也买过没有这个快好用，一年前去美国在别家也买过没有这个快
             </p>
+
+            <div class="reply">
+                <p class="comment_reply">
+                    回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
+                    回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
+                </p>
+            </div>
+            <div class="type">
+                套餐类型： 6天无限4G流量 ：4G无限高速流量
+            </div>
         </div>
-        <div class="type">
-            套餐类型： 6天无限4G流量 ：4G无限高速流量
+        <div class="comment_details comment_details_2">
+            <div class="comment_name">昵********称</div>
+            <div class="comment_time" >评价时间:2017-06-03</div>
+            <p class="comment_content">
+                好用，一年前去美国在别家也买过没有这个快好用，一年前去美国在别
+                家也买过没有这个快好用，一年前去美国在别家也买过没有这个快
+            </p>
+            <div class="comment_img">
+                <ul>
+                    <li><img src="../images/pinglun.png"></li>
+                    <li><img src="../images/pinglun.png"></li>
+                    <li><img src="../images/pinglun.png"></li>
+                </ul>
+            </div>
+            <div class="reply">
+                <p class="comment_reply">
+                    回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
+                    回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
+                </p>
+            </div>
+            <div class="type">
+                套餐类型： 6天无限4G流量 ：4G无限高速流量
+            </div>
         </div>
     </div>
-    <div class="comment_details comment_details_2">
-        <div class="comment_name">昵********称</div>
-        <div class="comment_time" >评价时间:2017-06-03</div>
-        <p class="comment_content">
-            好用，一年前去美国在别家也买过没有这个快好用，一年前去美国在别
-            家也买过没有这个快好用，一年前去美国在别家也买过没有这个快
-        </p>
-        <div class="comment_img">
-            <ul>
-                <li><img src="../images/pinglun.png"></li>
-                <li><img src="../images/pinglun.png"></li>
-                <li><img src="../images/pinglun.png"></li>
-            </ul>
-        </div>
-        <div class="reply">
-            <p class="comment_reply">
-                回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
-                回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
+    <div class="pingJia_1" id="pingJia_2" style="display: none;">
+        <div class="comment_details">
+            <div class="comment_name">2昵********称</div>
+            <div class="comment_time">评价时间:2017-06-03</div>
+            <p class="comment_content">
+                好用，一年前去美国在别家也买过没有这个快好用，一年前去美国在别
+                家也买过没有这个快好用，一年前去美国在别家也买过没有这个快
             </p>
+            <div class="comment_img">
+                <ul>
+                    <li><img src="../images/pinglun.png"></li>
+                    <li><img src="../images/pinglun.png"></li>
+                    <li><img src="../images/pinglun.png"></li>
+                </ul>
+            </div>
+            <div class="reply">
+                <p class="comment_reply">
+                    回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
+                    回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
+                </p>
+            </div>
+            <div class="type">
+                套餐类型： 6天无限4G流量 ：4G无限高速流量
+            </div>
         </div>
-        <div class="type">
-            套餐类型： 6天无限4G流量 ：4G无限高速流量
+        <div class="comment_details comment_details_2">
+            <div class="comment_name">昵********称</div>
+            <div class="comment_time" >评价时间:2017-06-03</div>
+            <p class="comment_content">
+                好用，一年前去美国在别家也买过没有这个快好用，一年前去美国在别
+                家也买过没有这个快好用，一年前去美国在别家也买过没有这个快
+            </p>
+            <div class="comment_img">
+                <ul>
+                    <li><img src="../images/pinglun.png"></li>
+                    <li><img src="../images/pinglun.png"></li>
+                    <li><img src="../images/pinglun.png"></li>
+                </ul>
+            </div>
+            <div class="reply">
+                <p class="comment_reply">
+                    回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
+                    回复：亲感谢您使用我们的产品， 回复：亲感谢您使用我们的产品
+                </p>
+            </div>
+            <div class="type">
+                套餐类型： 6天无限4G流量 ：4G无限高速流量
+            </div>
         </div>
     </div>
-<!--底部联系客服，加入收藏-->
+</div>
+    <!--底部联系客服，加入收藏-->
 <div class="bottom_box">
     <div class="bottom_left">
         <div class="bottom_QQ">
-            <img src="../images/qq.png">
+            <img src="../images/qqq.png">
             <p>客服</p>
         </div>
         <div class="bottom_QQ"id="shop">
-            <img src="../images/qq.png">
+            <img src="../images/dianPu.png">
             <p>店铺</p>
         </div>
     </div>
@@ -212,11 +245,46 @@
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../iconfont/iconfont.js"></script>
 <script>
-        $(".close").click(function(){
+    //选项卡切换 图文介绍 相关评价
+    var liArr = document.getElementsByClassName("intruduction_left");
+    var divArr = document.getElementsByClassName("xuanXiang");
+    for(var i = 0; i < liArr.length;i++) {
+        liArr[i].index = i;
+        liArr[i].onclick = function() {
+            for(var j = 0; j < liArr.length; j++) {
+                liArr[j].style.color = "black";
+                liArr[this.index].style.color = "#ff9966";
+                divArr[j].style.display = "none";
+                divArr[this.index].style.display = "block";
+            }
+        }
+    }
+
+
+    $('.pingJia_title').click(function(){
+        console.log($(this))
+        if($(this).index() == 1){
+            removeAll();
+            $(this).children().addClass('dian_avtive');
+            $('#pingJia_1').show();
+            $('#pingJia_2').hide();
+        }else if($(this).index() == 2 ){
+            removeAll();
+            $(this).children().addClass('dian_avtive');
+            $('#pingJia_1').hide();
+            $('#pingJia_2').show();
+        }
+    });
+    function removeAll(){
+        $('.pingJia_title').children().removeClass('dian_avtive');
+    }
+
+
+    $(".close").click(function(){
             $(".box").hide();
         });
 
-        $(".choose_type").click(function () {
+    $(".choose_type").click(function () {
             if ($(".box").css("display") == "none") {
                 $(".box").show("3000");
             } else {
@@ -226,6 +294,9 @@
     $("#shop").click(function () {
         window.location.href="shop.html";
     })
+
+
+
 </script>
 </body>
 </html>

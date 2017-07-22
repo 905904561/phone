@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.content{
+    width: 80%;
+    margin: 5rem auto auto auto;
+    text-align: center;
+    color: #666666;
+    font-family: "微软雅黑";
+}
+.content button{
+    background-color: white;
+    border: 1px solid rgb(239,239,239);
+    line-height: 2.5rem;
+    width: 40%;
+    font-size: 1.0rem;
+    margin-top: 2rem ;
+    outline: none;
+}
+.content .try{
+    color:#999999;
+    font-size: 0.8rem;
+}
+.content .type{
+    color: #999999;
+}
+.type_pay{
+    margin:1.8rem auto auto 1.8rem ;
+    color: #999999;
+
+}
+.type_pay .radio_box{
+    margin-top: 2rem;
+}
+.type_pay .radio_box .left{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999999;
+    border-radius: 50px;
+    float: left;
+    margin-right: 2rem;
+}
+.type_pay .radio_box .right img{
+    width: 26px;
+    float: left;
+    margin-right: 1rem;
+}
+.type_pay .radio_box .right span{
+    font-family: "微软雅黑";
+    font-size: 0.9rem;
+}
+.bottom{
+    position: fixed;
+    bottom: 0px;
+    color: #ffffff;
+    background-color:#ff9966;
+    height: 3.0rem;
+    width: 100%;
+    line-height: 3.0rem;
+    text-align: center;
+    font-family: "微软雅黑";
+}
+.left_active{
+    background: url("../images/991.png") no-repeat center;
+    background-size: 100% 100%;
+    border: 1px solid #ff9966;
+}
